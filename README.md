@@ -18,6 +18,7 @@ Many thanks to [@FernandoTheRojo](https://twitter.com/fernandotherojo) for the S
 - [Tamagui](https://tamagui.dev) 🪄
 - [solito](https://solito.dev) for cross-platform navigation
 - Expo SDK
+  - added expo router
 - Next.js
 - React Navigation
 - tRPC
@@ -44,7 +45,8 @@ You can add other folders inside of `packages/` if you know what you're doing an
 
 ## 🏁 Start the app
 
-- Clone .env.example to .env. Fill in values. Then, you need to enter clerk.dev public api(same as NEXT_PUBLIC_CLERK_FRONTEND_API) into apps/expo/App.tsx in frontendApi. 
+- Clone .env.example to .env. Fill in values. 
+- Enter clerk.dev public api(same as env.NEXT_PUBLIC_CLERK_FRONTEND_API) into apps/expo/app/_layout.tsx in frontendApi. 
 
 - Install dependencies: `yarn`
 

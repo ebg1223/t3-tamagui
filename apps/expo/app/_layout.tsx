@@ -1,12 +1,12 @@
 import 'expo-dev-client'
 import React from 'react'
-import { NativeNavigation } from 'app/navigation/native'
 import { Provider } from 'app/provider'
 import { useFonts } from 'expo-font'
-import { TRPCAuthContext } from './utils/trpc'
+import { TRPCAuthContext } from '../utils/trpc'
 import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-expo'
-import { tokenCache } from './cache'
-import SignInScreen from './SignInScreen'
+import { tokenCache } from '../utils/cache'
+import SignInScreen from '../SignInScreen'
+import { Stack } from 'expo-router'
 
 export default function App() {
   const [loaded] = useFonts({
@@ -26,7 +26,7 @@ export default function App() {
       <SignedIn>
         <TRPCAuthContext>
           <Provider>
-            <NativeNavigation />
+            <Stack />
           </Provider>
         </TRPCAuthContext>
       </SignedIn>

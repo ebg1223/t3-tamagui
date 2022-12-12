@@ -10,8 +10,6 @@
     "@my/config": "*",
     "@my/db": "*",
     "@my/ui": "*",
-    "@react-navigation/native": "^6.0.11",
-    "@react-navigation/native-stack": "^6.7.0",
     "@tamagui/animations-react-native": "1.0.1-rc.1.4",
     "@tamagui/colors": "1.0.1-rc.1.4",
     "@tamagui/font-inter": "1.0.1-rc.1.4",

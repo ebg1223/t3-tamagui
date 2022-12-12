@@ -17,7 +17,7 @@ import { api } from '@my/api/src/client'
 
 export function HomeScreen() {
   const linkProps = useLink({
-    href: '/user/nate',
+    href: '/protected',
   })
   const p = api.post.all.useQuery()
   const m = api.auth.getSecretMessage.useQuery()
@@ -48,7 +48,7 @@ export function HomeScreen() {
       </YStack>
 
       <XStack>
-        <Button {...linkProps}>Link to user</Button>
+        <Button {...linkProps}>Link to Protected</Button>
       </XStack>
 
       <XStack $sm={{ fd: 'column' }} space>

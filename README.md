@@ -1,12 +1,15 @@
-# Tamagui + Solito + Next + Expo Monorepo
-
+# T3-Tamagui-Turbo
+#### Basaed on the Tamagui + Solito + Next + Expo Monorepo
+#### Includes tRPC + Prisma + Clerk.dev auth
 ```sh
 npx create-tamagui-app@latest myapp
 ```
 
 ## 🔦 About
 
-This monorepo is a starter for an Expo + Next.js + Tamagui + Solito app.
+This is a monorepo based on the tamagui example, with T3 extras.
+
+
 
 Many thanks to [@FernandoTheRojo](https://twitter.com/fernandotherojo) for the Solito starter monorepo which this was forked from. Check out his [talk about using expo + next together at Next.js Conf 2021](https://www.youtube.com/watch?v=0lnbdRweJtA).
 
@@ -17,6 +20,9 @@ Many thanks to [@FernandoTheRojo](https://twitter.com/fernandotherojo) for the S
 - Expo SDK
 - Next.js
 - React Navigation
+- tRPC
+- Prisma
+- Clerk.dev Auth
 
 ## 🗂 Folder layout
 
@@ -31,10 +37,14 @@ The main apps are:
     - `features` (don't use a `screens` folder. organize by feature.)
     - `provider` (all the providers that wrap the app, and some no-ops for Web.)
     - `navigation` Next.js has a `pages/` folder. React Native doesn't. This folder contains navigation-related code for RN. You may use it for any navigation code, such as custom links.
+  - `api` tRPC api routers and definitions
+  - `db` Prisma schema and generated client
 
 You can add other folders inside of `packages/` if you know what you're doing and have a good reason to.
 
 ## 🏁 Start the app
+
+- Clone .env.example to .env. Fill in values. Then, you need to enter clerk.dev public api(same as NEXT_PUBLIC_CLERK_FRONTEND_API) into apps/expo/App.tsx in frontendApi. 
 
 - Install dependencies: `yarn`
 

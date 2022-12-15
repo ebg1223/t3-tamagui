@@ -1,9 +1,6 @@
 # T3-Tamagui-Turbo
 #### Basaed on the Tamagui + Solito + Next + Expo Monorepo
 #### Includes tRPC + Prisma + Clerk.dev auth
-```sh
-npx create-tamagui-app@latest myapp
-```
 
 ## 🔦 About
 

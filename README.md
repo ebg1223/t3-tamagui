@@ -1,4 +1,7 @@
-# T3-Tamagui-Turbo
+# T3-Tamagui-Turbo - DEPRECATED
+# @chen-rn and I have joined forces.
+# https://github.com/chen-rn/CUA
+# Use this instead
 #### Basaed on the Tamagui + Solito + Next + Expo Monorepo
 #### Includes tRPC + Prisma + Clerk.dev auth
 
